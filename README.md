@@ -57,9 +57,10 @@ Given only free satellite land-cover data, HeatPath predicts which 100 m cells o
 
 *Spearman ranks the hot-to-cool order of 100 m cells within a city. R² and MAE are per scene for Gorakhpur, Kolkata and Ahmedabad, and pooled for Bikaner and Raipur.*
 
-<img width="849" height="455" alt="ahmeda" src="https://github.com/user-attachments/assets/a23c73e5-7d16-4969-83dc-7b882fda8c07" />
+<img width="1190" height="1072" alt="bikaner_raipur" src="https://github.com/user-attachments/assets/e99b9a2b-38f0-468c-8a99-9b02ab7b275f" />
 
-*Ahmedabad (scene 1_LC08_148044_20240423), the weakest unseen city: predicted (left) vs observed Landsat (right), °C vs scene mean. The model finds the river corridor and part of the hot patch at the top right, but misses the large hot zone in the south and flattens contrast.*
+
+*Bikaner (top) and Raipur (bottom), two cities the model never saw: predicted (left) vs observed Landsat (right), °C vs scene mean, first usable scene shown. In Bikaner the model places the cool core and both hot zones (north and southeast) where Landsat sees them (Spearman 0.83 over 3 scenes). In Raipur it finds the cooler river corridor and the hot edges (Spearman 0.66 over 3 scenes). It softens the extremes, so read the map as a ranking of relatively hotter and cooler places.*
 
 <img width="756" height="420" alt="shap_glo" src="https://github.com/user-attachments/assets/b76d48b1-426f-4b6d-a783-8e6f0740d5ed" />
 
