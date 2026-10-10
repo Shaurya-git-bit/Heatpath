@@ -11,7 +11,7 @@ import streamlit as st
 
 st.set_page_config(page_title="HeatPath", page_icon="🔥", layout="wide")
 
-DATA = Path(__file__).parent
+DATA = Path(__file__).parent / "data"
 
 ROUTING = {
     "Gorakhpur": dict(key="gorakhpur", bbox=[83.34, 26.73, 83.42, 26.79],
