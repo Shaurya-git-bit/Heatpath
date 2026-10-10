@@ -10,8 +10,8 @@ A street-level heat map for any city, built entirely from free satellite data, w
 
 **Team:** Shaurya Pandey (Solo)
 
-![HeatPath app](images/app_screenshot.png)
-*[PLACEHOLDER: screenshot of the Streamlit app showing a heat map with the fastest (dark) and cooler (magenta) route.]*
+<img width="1364" height="633" alt="Screenshot 2026-10-10 180240" src="https://github.com/user-attachments/assets/7f220840-1213-460b-9340-bb049dfa4488" />
+*screenshot of the Streamlit app showing a heat map with the fastest (dark) and cooler (magenta) route.*
 
 ## The problem
 Heat is one of the most immediate climate impacts on city life, but cities like Gorakhpur, Kolkata and Ahmedabad have no street-level heat data. Sensors are sparse, and satellite images are too coarse and too cloud-limited to use directly. People still have to decide where to meet, walk, ride or wait outdoors, and planners have to decide where shade and water points matter most.
