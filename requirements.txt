@@ -3,6 +3,6 @@ pandas
 numpy
 networkx
 shapely>=2
-pyarrows
+pyarrow
 matplotlib
 pydeck
