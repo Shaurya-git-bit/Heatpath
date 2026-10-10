@@ -4,7 +4,7 @@
 A street-level heat map for any city, built entirely from free satellite data, with cooler bike routes on top.
 
 **Track:** AI + Climate (prepare for climate impacts) · **ForgeHacks 2026**
-**Live demo:** [Streamlit link] · **Demo video:** [YouTube link] · **Team:** Shaurya Pandey (Solo)
+**Live demo:** [Streamlit link] · **Demo video:** [[YouTube link]](https://youtu.be/NvK7KZ3ni34) · **Team:** Shaurya Pandey (Solo)
 
 ![HeatPath app](images/app_screenshot.png)
 *[PLACEHOLDER: screenshot of the Streamlit app showing a heat map with the fastest (dark) and cooler (magenta) route.]*
