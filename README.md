@@ -96,12 +96,29 @@ Given only free satellite land-cover data, HeatPath predicts which 100 m cells o
 - Route exposure is scored on the model's own predicted heat, so the cuts are partly circular. The temperature difference between routes is small (median 0.21 °C Kolkata, 0.07 °C Gorakhpur); the gain is in exposure to the hottest streets.
 - Ahmedabad is the weakest city (Spearman 0.42 to 0.46). Routing covers about 10 × 11 km in Kolkata and 8 × 6.6 km in Gorakhpur.
 
+## Repo structure
+```
+heatpath/
+├── heatpath.py                       # Streamlit app (map, routing, results)
+├── requirements.txt                  # App dependencies
+├── README.md
+├── lst-climate.ipynb                 # Full pipeline: sampling, training, validation, SHAP, unseen-city tests, routing
+└── data/
+    ├── heatpath_raw_v3.parquet       # Training data (9 cities, Landsat + land-cover features)
+    ├── heat_grid_gorakhpur.parquet   # Predicted heat grids for the 5 unseen cities
+    ├── heat_grid_kolkata.parquet
+    ├── heat_grid_ahmedabad.parquet
+    ├── heat_grid_bikaner.parquet
+    ├── heat_grid_raipur.parquet
+    ├── gorakhpur_roads_scored.pkl    # Bike road graphs scored with predicted heat
+    └── kolkata_roads_scored.pkl
+```
+
 ## Run it
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run heatpath.py
 ```
-- `app.py`: Streamlit app. `data/`: 5 city heat grids and 2 scored road graphs. `images/`: figures above.
-- `lst-climate.ipynb`: full pipeline (Earth Engine sampling, training, validation, SHAP, unseen-city tests, routing, 100-trip evaluation). Runs in Kaggle with an Earth Engine project.
+The notebook runs on Kaggle with an Earth Engine project. To rerun it locally, point the `pd.read_parquet` path at `data/heatpath_raw_v3.parquet`.
 
 **Data:** Landsat 8/9 Collection 2 Level 2, ESA WorldCover v200, SRTM, OpenStreetMap, Open-Meteo.
